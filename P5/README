@@ -1,0 +1,30 @@
+## Name
+
+smash
+
+## Synopsis
+
+Smash is a program that replicates the functioniality of the bash shell, to an extent.
+Here in project six, support was added for external commands, using the fork/exec/wait 
+functions to spawn a child process to run bash commands. It also supports several internal
+commands, built in previous iteratios of the program.
+
+## Description
+
+Ensure all necessary files are in the same directory: Makefile, commands.c, history.c, 
+history.h, smash.c, and history.h. Compile with "make", clean with "make clean". 
+
+The program at this point is built to execute internal and external commands. Built
+in internal commands are the cd, history, and exit functions. The cd function will change
+directories, if it exists. History will display all user entered commands, valid or invalid, 
+up to a max printout of 10, only the most recent 10 will be shown. Exit will exit smash.
+
+The program also supports external commands, using the execvp function to spawn a child
+process and execute commands supported by the bash shell. 
+
+## Author
+
+Project written by Colten Davis
+CS 253/Spring 2019
+ 
+
